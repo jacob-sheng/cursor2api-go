@@ -4,7 +4,7 @@ metadata:
   name: Cursor2API-Go
 spec:
   description: A Go service that converts Cursor Web into OpenAI chat/completions compatible API
-  icon: https://raw.githubusercontent.com/jacob-sheng/cursor2api-go/main/docs/images/home.png
+  icon: https://raw.githubusercontent.com/libaxuan/cursor2api-go/main/docs/images/home.png
   tags:
     - Tool
     - AI
@@ -41,16 +41,14 @@ spec:
     - `MODELS`: Base model list, comma-separated (default: claude-sonnet-4.6)
     - `DEBUG`: Enable debug mode (default: false)
     - `TIMEOUT`: Request timeout in seconds (default: 60)
-
   services:
     - name: cursor2api-go
       template: GIT
       domainKey: PUBLIC_DOMAIN
       spec:
         source:
-          type: GITHUB
-          repoID: 1066838979
-          repo: libaxuan/cursor2api-go
+          source: GITHUB
+          repo: 1066838979
           branch: main
         ports:
           - id: web
@@ -67,23 +65,9 @@ spec:
             default: "false"
           TIMEOUT:
             default: "60"
-
   localization:
     zh-CN:
       description: 一个将 Cursor Web 转换为 OpenAI chat/completions 兼容 API 的 Go 服务
-      variables:
-        - key: PUBLIC_DOMAIN
-          type: DOMAIN
-          name: 域名
-          description: 你想为 Cursor2API 服务绑定哪个域名？
-        - key: API_KEY
-          type: STRING
-          name: API 密钥
-          description: 服务的 API 认证密钥（默认为 0000）
-        - key: MODELS
-          type: STRING
-          name: 模型列表
-          description: "基础模型列表，逗号分隔（默认：claude-sonnet-4.6）"
       readme: |-
         # Cursor2API-Go
 

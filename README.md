@@ -6,7 +6,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.24+-blue.svg)](https://golang.org)
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial-orange.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/cursor2api-go)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/FOFRHZ)
 
 ## ✨ 特性
 
